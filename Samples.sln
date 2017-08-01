@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationInManagedThread
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MultiThread", "MultiThread", "{A3EBBF77-BB2E-4489-8C68-00287B74723B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicPatternForTaskCancellation", "BasicPatternForTaskCancellation\BasicPatternForTaskCancellation.csproj", "{B93772D6-5004-47DB-A856-542423C93E3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationCancellationVersusObjectCancellation", "OperationCancellationVersusObjectCancellation\OperationCancellationVersusObjectCancellation.csproj", "{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{BE69BB01-BA9E-4B17-9036-99C6B3DD2D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE69BB01-BA9E-4B17-9036-99C6B3DD2D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE69BB01-BA9E-4B17-9036-99C6B3DD2D35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93772D6-5004-47DB-A856-542423C93E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93772D6-5004-47DB-A856-542423C93E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93772D6-5004-47DB-A856-542423C93E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93772D6-5004-47DB-A856-542423C93E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D889C50D-5E39-4B9D-87B2-BD06126E71CA} = {A3EBBF77-BB2E-4489-8C68-00287B74723B}
 		{BE69BB01-BA9E-4B17-9036-99C6B3DD2D35} = {A3EBBF77-BB2E-4489-8C68-00287B74723B}
+		{B93772D6-5004-47DB-A856-542423C93E3A} = {A3EBBF77-BB2E-4489-8C68-00287B74723B}
+		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6} = {A3EBBF77-BB2E-4489-8C68-00287B74723B}
 	EndGlobalSection
 EndGlobal

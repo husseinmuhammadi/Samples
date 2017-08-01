@@ -26,7 +26,7 @@
                 </Button>
             </Grid>
             <Border>
-                <ListView ItemsSource="{Binding Path=Tasks}">
+                <ListView ItemsSource="{Binding Path=TaskSpecifications}">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -57,7 +57,7 @@
                                     </TextBlock.Text>
                                 </TextBlock>
                                 <Slider Grid.Column="2" Value="{Binding Path=Progress}" Minimum="0" Maximum="10000" SmallChange="10" LargeChange="100"/>
-                                <Button Grid.Column="3">Stop</Button>
+                                <Button Grid.Column="3" Command="{Binding Path=CommandStopTask}">Stop</Button>
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>

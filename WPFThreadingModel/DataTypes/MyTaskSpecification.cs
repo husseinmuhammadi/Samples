@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using WPFThreadingModel.ViewModel;
@@ -17,9 +18,13 @@ namespace WPFThreadingModel.DataTypes
 
         public ICommand CommandStopTask { get; private set; }
 
-        public MyTaskSpecification()
+        public MyTaskSpecification(CancellationTokenSource cancellationTokenSource)
         {
-            CommandStopTask = new DelegateCommand(() => { });
+            CommandStopTask = new DelegateCommand(() =>
+            {
+                cancellationTokenSource.Cancel();
+                cancellationTokenSource.Dispose();
+            });
         }
 
         public int TaskId
