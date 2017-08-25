@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFThreadingModel", "WPFThreadingModel\WPFThreadingModel.csproj", "{D889C50D-5E39-4B9D-87B2-BD06126E71CA}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicPatternForTaskCancellation", "BasicPatternForTaskCancellation\BasicPatternForTaskCancellation.csproj", "{B93772D6-5004-47DB-A856-542423C93E3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationCancellationVersusObjectCancellation", "OperationCancellationVersusObjectCancellation\OperationCancellationVersusObjectCancellation.csproj", "{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousModelLanguageLevel", "AsynchronousModelLanguageLevel\AsynchronousModelLanguageLevel.csproj", "{DC8C58D9-2B4F-4F29-9E6F-42B660C2B35F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8C58D9-2B4F-4F29-9E6F-42B660C2B35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8C58D9-2B4F-4F29-9E6F-42B660C2B35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8C58D9-2B4F-4F29-9E6F-42B660C2B35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8C58D9-2B4F-4F29-9E6F-42B660C2B35F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +50,6 @@ Global
 		{BE69BB01-BA9E-4B17-9036-99C6B3DD2D35} = {A3EBBF77-BB2E-4489-8C68-00287B74723B}
 		{B93772D6-5004-47DB-A856-542423C93E3A} = {A3EBBF77-BB2E-4489-8C68-00287B74723B}
 		{465AC656-0F9A-4F30-A8B4-C4BE1EDCC4C6} = {A3EBBF77-BB2E-4489-8C68-00287B74723B}
+		{DC8C58D9-2B4F-4F29-9E6F-42B660C2B35F} = {A3EBBF77-BB2E-4489-8C68-00287B74723B}
 	EndGlobalSection
 EndGlobal

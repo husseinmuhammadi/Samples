@@ -1,0 +1,30 @@
+﻿<Window x:Class="AsynchronousModelLanguageLevel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsynchronousModelLanguageLevel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+        </Grid.Resources>
+        <DockPanel>
+            <Grid DockPanel.Dock="Bottom">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnPrintThreadId" Click="btnPrintThreadId_Click">Print Thread Id</Button>
+                <Button Grid.Column="1" x:Name="btnAsyncTask" Click="btnAsyncTask_Click">Run Async Task</Button>
+            </Grid>
+            <Grid>
+                <TextBox Name="txtPrintArea" AcceptsReturn="True" TextWrapping="Wrap"/>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>
